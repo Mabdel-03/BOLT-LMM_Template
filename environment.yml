@@ -1,0 +1,14 @@
+name: bolt_lmm
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas>=1.5.0
+  - numpy>=1.23.0
+  - scipy>=1.9.0
+  - plink2>=2.0
+  # Note: BOLT-LMM must be installed separately from:
+  # https://alkesgroup.broadinstitute.org/BOLT-LMM/
+
