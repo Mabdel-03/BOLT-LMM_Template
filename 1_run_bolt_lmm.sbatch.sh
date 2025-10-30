@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=bolt_gwas  # CUSTOMIZE: Your job name
 #SBATCH --partition=YOUR_PARTITION  # CUSTOMIZE: Your HPC partition name
-#SBATCH --mem=150G  # CUSTOMIZE: Adjust based on sample size (see ADAPTATION_GUIDE.md)
+#SBATCH --mem=100G  # CUSTOMIZE: Adjust based on sample size (see ADAPTATION_GUIDE.md)
 #SBATCH -n 32  # CUSTOMIZE: Number of threads (match --numThreads in run_single_phenotype.sh)
-#SBATCH --time=12:00:00  # CUSTOMIZE: Adjust based on expected runtime
+#SBATCH --time=47:00:00  # CUSTOMIZE: Adjust based on expected runtime
 #SBATCH --output=1_%a.out  # %a is replaced with array task ID
 #SBATCH --error=1_%a.err
 #SBATCH --array=1-6  # CUSTOMIZE: Set to N_phenotypes × N_covariate_sets
